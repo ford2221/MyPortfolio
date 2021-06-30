@@ -1,3 +1,3 @@
 # MyPortfolio
-I'm a junior developer triying to get level 
+I'm a junior developer triying to get level ,
 this is my portfolio ongoing development....
