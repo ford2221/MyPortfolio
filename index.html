@@ -27,7 +27,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="flex justify-around mb-4 shadow-2xl" >
+        <div class="first-content flex justify-around mb-4" >
             <div style="margin-top: 50px;">
 
                 <p class="align-center text-gray-400 mt-16 text-lg mb-2 text-justify" style ="width: 300px;">
@@ -43,44 +43,90 @@
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                 </span>
             </div>
-            <img style="margin-top: 30px;" src="public/img/foto.jpg" width="300" class="mb-6 rounded-full h-80 w-80">
+            <img style="margin-top: 30px;" src="public/img/foto.jpg" width="300" class="img mb-6 rounded-full h-80 w-80">
         </div>
+
+        <!--<div class=" social">
+
+            <li>
+                <a href="#">
+                    <i class="fab fa-github text-blue-200"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook text-blue-500"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram text-purple-700"></i>
+                </a>
+            </li>
+  
+        </div>-->
 
     
         <h3 class="text-center text-xl text-gray-300 pt-6">Projects</h3>
         
 
-        <div id="projects" class="flex mt-4 space-x-10 justify-center mb-4" >
-            <div class="transform hover:-translate-y-2 border hover:bg-gray-900 border-gray-400 shadow-2xl rounded ml-4" style ="width: 250px; height: 250px;">
-                <h2 class="text-center underline text-gray-300 pt-6">The coins</h2>
-                <p class="text-justify p-2 text-gray-400">
-                    Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
-                    monedas en tiempo real, y las estadisticas de los últimos siete(7) días
-                </p>
-                <a class="bg-blue-400 hover:bg-blue-700 text-gray-100 p-2 ml-2 rounded" target="_blank"
-                    href="https://github.com/ford2221/MyPortfolio">
-                    See Project
-                    <i class="fa fa-eye"></i>
-                </a>
+        <div id="projects" class="flex mt-6 space-x-10 justify-center mb-6" >
+
+
+            <div class="the-card shadow-2xl rounded ml-4">
+                <div class="card">
+                    <h2 class="title text-center underline text-gray-300 pt-6">The cryptocoins</h2>
+                    <p class="text-justify p-2 text-gray-400">
+                        Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
+                        monedas en tiempo real, y las estadisticas de los últimos siete(7) días
+                    </p>
+                    <div class="Coin">
+                        <a class=" bg-blue-400 text-gray-100 p-2 rounded" target="_blank"
+                            href="https://github.com/ford2221/coinapi">
+                            See Project
+                            <i class="fab fa-github text-blue-900"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="transform hover:-translate-y-2 border hover:bg-gray-900 border-gray-400 shadow-2xl rounded" style ="width: 250px;">
-                <h2 class="text-center underline text-gray-300 pt-6">Weather Page</h2>
-                <p class="text-justify p-2 text-gray-400">
-                    Esta pagina consiste en mostrar la información completa del clima en tiempo real
-                </p>
+
+            <div class="weather-card shadow-2xl rounded ml-4">
+                <div class="cardweather">
+                    <h2 class="title-weather text-center underline text-gray-300 pt-6">Weather</h2>
+                    <p class="text-justify p-2 text-gray-400">
+                        Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
+                        monedas en tiempo real, y las estadisticas de los últimos siete(7) días
+                    </p>
+                    <div class="weather">
+                        <a class=" bg-blue-400 text-gray-100 p-2 rounded" target="_blank"
+                            href="https://github.com/ford2221/MyPortfolio">
+                            See Project
+                            <i class="fab fa-github text-blue-900"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="transform hover:-translate-y-2 border hover:bg-gray-700 border-gray-400 shadow-2xl rounded mr-4" style ="width: 250px;">
-                <h2 class="text-center underline text-gray-300 pt-6">Coin Page</h2>
-                <p class="text-justify p-2 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    omnis provident. Enim corrupti dolores nostrum quis quam dolore praesentium.
-                </p>
-            </div>
+
+            <!--<div class="the-card shadow-2xl rounded ml-4">
+                <div class="card">
+                    <h2 class="title text-center underline text-gray-300 pt-6">The coins</h2>
+                    <p class="text-justify p-2 text-gray-400">
+                        Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
+                        monedas en tiempo real, y las estadisticas de los últimos siete(7) días
+                    </p>
+                    <div class="Coin">
+                        <a class=" bg-blue-400 text-gray-100 p-2 rounded" target="_blank"
+                            href="https://github.com/ford2221/MyPortfolio">
+                            See Project
+                            <i class="fab fa-github text-blue-900"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>-->
         </div>
 
-    
-    
-        <div id="skills" class="flex mt-4 space-x-10 justify-center justify-around">
-            <div class="transform hover:-translate-y-2 shadow-2xl hover:bg-gray-900 rounded" style="width: 400px;">
+        <div id="skills" class="flex mt-6 space-x-10 justify-center justify-around">
+            <div class="skills rounded" >
                 <h2 class="ml-6 text-center p-4 text-xl text-gray-300 underline mb-4">Languages</h2>
                 <li class="ml-6 text-gray-400 text-xl">Creole(Haitian native language)</li>
                 <li class="ml-6 text-gray-400 text-xl">French</li>
@@ -88,7 +134,7 @@
                 <li class="ml-6 text-gray-400 text-xl">English</li>
             
             </div>
-            <div class="transform hover:-translate-y-2 shadow-2xl hover:bg-gray-900 ml-4" style="width: 400px; height: 350px;">
+            <div class="skills  ml-4" style=" height: 350px;">
                 <h2 class="text-center text-xl p-4 text-gray-300 underline mb-4">Skills</h2>
                 <div class="grid grid-cols-3 gap-4 pl-4">   
                     <i  class='bx bxl-python bx-lg text-5xl text-yellow-300 bx-tada-hover'></i>
@@ -106,23 +152,11 @@
                         <img class="rounded-full h-10 w-10 bx-tada-hover" style="height: 40px; width: 40px;" src="public/img/tailwind.png">
                         Tailwind
                     </span>
-                      
-   
-                    <!--<img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/git.png">
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/js.png">
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/vuejs.png">
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/flask.png">
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/nodejs.jpeg">-->
-                   
-                    <!--
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/html.png">
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/sql.jpg">
-                    <img class="rounded-full h-20 w-20" style="height: 60px; width: 60px;" src="public/img/css.png">-->
                 </div>  
                 
             </div>
         
-            <div class="transform hover:-translate-y-2 shadow-2xl hover:bg-gray-700 bd rounded"  style="width: 400px;">
+            <div class="skills bd rounded">
                 <h2 class="text-center p-4 text-xl text-gray-300 underline mb-4">Hobbies</h2>
                 <li class="ml-6 text-gray-400 text-xl">Watch my favorites programs</li>
                 <li class="ml-6 text-gray-400 text-xl">Take coffee or Tea</li>
@@ -132,7 +166,7 @@
             </div>
         </div>
     
-        <div id="contact" class="text-center md:max-w-2xl md:mx-auto px-2 shadow-2xl border mb-6 mt-6 rounded md:pb-4">
+        <!--<div id="contact" class="text-center md:max-w-2xl md:mx-auto px-2 shadow-2xl border mb-6 mt-6 rounded md:pb-4">
             <h1 class="text-3xl md:text-4xl font-medium underline my-2 mt-6 text-gray-300">Get in Contact with me</h1>
             <div class="contact-form mt-6 md:mt-12">
         
@@ -153,8 +187,9 @@
                 </div>
         
             </div>
-        </div>
+        </div>-->
     </div>
-    <script src="public/css/js/all.js"></script>
+    <script src="public/css/js/main.js"></script>
+    <script src="public/js/all.js"></script>
 </body>
 </html>

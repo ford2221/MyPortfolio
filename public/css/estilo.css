@@ -1,3 +1,110 @@
-nav{
-  background: polygon(0 0, 100% 0, 100% 30%, 76% 37%, 55% 24%, 42% 12%, 0 11%);
+body {
+  perspective: 1000px;
+  
+}
+
+.first-content {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.img {
+  transform: rotate(30deg);
+}
+
+.the-card {
+  height: 410px;
+  width: 27%;
+  transform-style: preserve-3d;
+}
+
+.title {
+	transition: all 0.75s ease-out;
+}
+
+.card{
+  transform-style: preserve-3d;
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  background: #010756;
+}
+
+.card p{
+  margin-top: 10px;
+  font-size: 19px;
+  transition: all 0.75s ease-out;
+	margin: 20px;
+}
+
+.card a {
+  float: center;
+  position: relative;
+  top: 60px;
+  margin-left: 30%;
+  
+}
+
+.Coin {
+  transition: all 0.75s ease-out;
+}
+
+/** weather**/
+.weather-card {
+  height: 410px;
+  width: 27%;
+  transform-style: preserve-3d;
+}
+
+.cardweather {
+  transform-style: preserve-3d;
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cardweather:hover {
+  background: #010756;
+}
+
+.cardweather p {
+  margin-top: 10px;
+  font-size: 19px;
+  transition: all 0.75s ease-out;
+	margin: 20px;
+}
+
+.cardweather a {
+  float: center;
+  position: relative;
+  top: 60px;
+  margin-left: 30%;
+}
+
+.weather {
+  transition: all 0.75s ease-out;
+}
+
+/** skills **/
+.skills {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+.skills:hover {
+  margin-top: -8px;
+  background: #010756;
+  margin-bottom: 20px;;
+}
+
+.social {
+  position: fixed;
+}
+
+.social li {
+  list-style: none;
+  
+  
 }
