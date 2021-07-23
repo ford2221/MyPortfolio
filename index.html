@@ -11,70 +11,55 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>My Portfolio</title>
 </head>
-<body class="bg-gradient-to-r from-blue-900 to-black mx-6">
+<body class="bg-gradient-to-r from-blue-900 to-black sm:mx-6">
     <div>
-        <nav class="bg-black h-14 shadow-2xl" >
-            <ul class="flex space-x-4 ml-6 justify-center" >    
-                
-                <li class="text-gray-400 hover:text-white cursor-pointer mt-4">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="text-gray-400 hover:text-white cursor-pointer mt-4">
-                    <a href="#skills">Skills & Hobbies</a>
-                </li>
-                <li class="text-gray-400 hover:text-white cursor-pointer mt-4">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="first-content flex justify-around mb-4" >
-            <div style="margin-top: 50px;">
+        <header x-data="{ mobileMenuOpen : false }" class="flex flex-wrap flex-row justify-between md:items-center md:space-x-4 bg-black py-6 px-6 relative">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-block md:hidden w-8 h-8 bg-gray-400 text-black p-1">
+                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+            <nav class=" absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-black shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0" :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"  @click.away="mobileMenuOpen = false">
+                <ul class="flex space-x-4 ml-6 " >    
+                    
+                    <li class="text-gray-400 hover:text-white cursor-pointer mt-4">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="text-gray-400 hover:text-white cursor-pointer mt-4">
+                        <a href="#skills">Skills & Hobbies</a>
+                    </li>
+                    <li class="text-gray-400 hover:text-white cursor-pointer mt-4">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="first-content flex flex-wrap justify-around mb-4" >
+            <img  src="public/img/foto.jpg" class="img mt-8 mb-4 border-4 border-blue-300 rounded-full h-32 w-32 sm:h-80 sm:w-80">
+            <div class="mt-16 mb-4">
 
-                <p class="align-center text-gray-400 mt-16 text-lg mb-2 text-justify" style ="width: 300px;">
+                <p class="align-center text-gray-400 sm:mt-16 text-lg mb-2 text-justify w-60 sm:w-80 " >
                     Hello, My name's Ford-Ndji Joseph, i am a coder's engineer of frontend and backend web, i'm from Haiti.
 
                 </p> 
-                <a class="bg-blue-400 hover:bg-blue-700 text-gray-100 p-2 rounded" target="_blank" href="public/docs/Ford-Ndji-Joseph-Mi-CV.pdf">
+                <a class="bg-blue-400 hover:bg-blue-700 text-gray-100 p-2  rounded" target="_blank" href="public/docs/Ford-Ndji-Joseph-Mi-CV.pdf">
                     See My CV
                     <i class="fa fa-eye"></i>
                 </a>
-                <span class="flex h-3 w-3">
+                <span class="flex ml-24 h-3 w-3">
                     <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-blue-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                 </span>
             </div>
-            <img style="margin-top: 30px;" src="public/img/foto.jpg" width="300" class="img mb-6 rounded-full h-80 w-80">
+            
         </div>
-
-        <!--<div class=" social">
-
-            <li>
-                <a href="#">
-                    <i class="fab fa-github text-blue-200"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fab fa-facebook text-blue-500"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fab fa-instagram text-purple-700"></i>
-                </a>
-            </li>
-  
-        </div>-->
-
     
-        <h3 class="text-center text-xl text-gray-300 pt-6">Projects</h3>
+        <h3 class="text-center text-xl text-gray-300 pt-6 underline">Projects</h3>
         
 
-        <div id="projects" class="flex mt-6 space-x-10 justify-center mb-6" >
+        <div id="projects" class="flex flex-wrap mt-6 justify-center justify-around mb-6" >
 
 
-            <div class="the-card shadow-2xl rounded ml-4">
-                <div class="card">
+            <div class="the-card bg-blue-900 shadow-2xl rounded mx-2 h-100 w-80 sm:h-80 sm:w-80">
+                <div class="card h-80">
                     <h2 class="title text-center underline text-gray-300 pt-6">The cryptocoins</h2>
                     <p class="text-justify p-2 text-gray-400">
                         Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
@@ -90,14 +75,14 @@
                 </div>
             </div>
 
-            <div class="weather-card shadow-2xl rounded ml-4">
-                <div class="cardweather">
-                    <h2 class="title-weather text-center underline text-gray-300 pt-6">Weather</h2>
+            <div class="the-Card2 bg-blue-900 shadow-2xl rounded mt-4 mx-2 h-100 w-80 sm:h-80 sm:w-80">
+                <div class="Card2 h-80">
+                    <h2 class="title text-center underline text-gray-300 pt-6">The coder</h2>
                     <p class="text-justify p-2 text-gray-400">
-                        Programe una pagina con vuejs, donde se podrá ver el cambio del clima en distintos paises 
-                        en tiempo real, y las estadisticas de la semana
+                        Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
+                        monedas en tiempo real, y las estadisticas de los últimos siete(7) días
                     </p>
-                    <div class="weather">
+                    <div class="coder">
                         <a class=" bg-blue-400 text-gray-100 p-2 rounded" target="_blank"
                             href="https://github.com/ford2221/MyPortfolio">
                             See Project
@@ -107,26 +92,29 @@
                 </div>
             </div>
 
-            <!--<div class="the-card shadow-2xl rounded ml-4">
-                <div class="card">
-                    <h2 class="title text-center underline text-gray-300 pt-6">The coins</h2>
+            <div class="weather-card bg-blue-900 shadow-2xl rounded  mt-4 mx-2 h-100 w-80 sm:h-80 sm:w-80">
+                <div class="cardweather h-80">
+                    <h2 class="title-weather text-center underline text-gray-300 pt-6">Weather</h2>
                     <p class="text-justify p-2 text-gray-400">
-                        Programe una pagina con vuejs, donde se podrá ver el cambio del precio de las crypto
-                        monedas en tiempo real, y las estadisticas de los últimos siete(7) días
+                        Programe una pagina con vuejs, donde se podrá ver el cambio del clima en distintos paises 
+                        en tiempo real, y las estadisticas de la semana
                     </p>
-                    <div class="Coin">
-                        <a class=" bg-blue-400 text-gray-100 p-2 rounded" target="_blank"
+                    <div class="weather">
+                        <a class=" bg-blue-400 mb-4 text-gray-100 p-2 rounded" target="_blank"
                             href="https://github.com/ford2221/MyPortfolio">
                             See Project
                             <i class="fab fa-github text-blue-900"></i>
                         </a>
                     </div>
                 </div>
-            </div>-->
+            </div>
+
         </div>
 
-        <div id="skills" class="flex mt-6 space-x-10 justify-center justify-around">
-            <div class="skills rounded" >
+        <!-- projects and skills-->
+
+        <div id="skills" class="flex flex-wrap mt-6 justify-center justify-around">
+            <div class="skills rounded mt-2 mx-2 h-80 w-80 sm:h-80 sm:w-80" >
                 <h2 class="ml-6 text-center p-4 text-xl text-gray-300 underline mb-4">Languages</h2>
                 <li class="ml-6 text-gray-400 text-xl">Creole(Haitian native language)</li>
                 <li class="ml-6 text-gray-400 text-xl">French</li>
@@ -134,7 +122,7 @@
                 <li class="ml-6 text-gray-400 text-xl">English</li>
             
             </div>
-            <div class="skills  ml-4" style=" height: 350px;">
+            <div class="skills mx-2 mt-2 h-80 w-80 sm:h-80 sm:w-80">
                 <h2 class="text-center text-xl p-4 text-gray-300 underline mb-4">Skills</h2>
                 <div class="grid grid-cols-3 gap-4 pl-4">   
                     <i  class='bx bxl-python bx-lg text-5xl text-yellow-300 bx-tada-hover'></i>
@@ -156,7 +144,7 @@
                 
             </div>
         
-            <div class="skills bd rounded">
+            <div class="skills bd rounded mt-2 mx-2 h-80 w-80 sm:h-80 sm:w-80">
                 <h2 class="text-center p-4 text-xl text-gray-300 underline mb-4">Hobbies</h2>
                 <li class="ml-6 text-gray-400 text-xl">Watch my favorites programs</li>
                 <li class="ml-6 text-gray-400 text-xl">Take coffee or Tea</li>
@@ -165,31 +153,42 @@
                 <li class="ml-6 text-gray-400 text-xl">Enjoy with my friends</li>
             </div>
         </div>
-    
-        <!--<div id="contact" class="text-center md:max-w-2xl md:mx-auto px-2 shadow-2xl border mb-6 mt-6 rounded md:pb-4">
-            <h1 class="text-3xl md:text-4xl font-medium underline my-2 mt-6 text-gray-300">Get in Contact with me</h1>
-            <div class="contact-form mt-6 md:mt-12">
-        
-                <div class="mb-4 p-4">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Yoour Message" autofocus
-                        class="bg-gray-400  rounded py-2 px-3 placeholder-gray-500 placeholder-opacity-100 w-full focus:border-indigo-300 input transition-colors transtion-"></textarea>
-                </div>
-        
-                <div class="mb-4 p-4 flex">
-                    <div class="flex-grow">
-                        <input type="text" placeholder="Your E-mail"
-                            class="bg-gray-400 rounded py-2 px-3 placeholder-gray-500 placeholder-opacity-100 w-full focus:border-indigo-300 input">
+        <div class="contact  flex flex-wrap justify-center justify-around space-x-10 mt-10 mb-4">
+            <div style="box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px rgba(0, 0, 0, 0.3); border-radius: 10px;" 
+                class="p-4 m-8 border border-blue-900 rounded w-80 sm:w-80 h-80 sm:h-80">
+                <form class="sm:ml-6">
+                    <h3 class="text-center text-xl p-4 text-gray-300 underline mb-4">Contact</h3>
+                    <div class="sm:m-2 mb-2">
+                        <input class="rounded bg-blue-200 p-2  placeholder-gray-500" type="email" placeholder="E-mail" >
                     </div>
-                    <button
-                        class="bg-indigo-600 hover:bg-indigo-700 text-white border-2 border-solid border-indigo-600 rounded py-2 px-4 flex-shrink-0 ml-4 transition-colors duration-300">
-                        Send
-                    </button>
-                </div>
-        
+                    <div>
+                        <textarea style="resize: none;" class="bg-blue-200 rounded px-3 pb-6 sm:m-2 placeholder-gray-500" placeholder="Your Message"></textarea>   
+                    </div>
+                    <button style="float: right;" class="bg-blue-400 sm:mr-8 text-gray-100 p-2 rounded">Send</button>
+                </form>
             </div>
-        </div>-->
+            <div style="margin-left: -10px;" class="social flex sm:place-items-center">
+                <li>
+                    <a href="https://github.com/ford2221">
+                        <i class="fab fa-github text-blue-200 text-3xl mb-4 sm:text-5xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook text-blue-500 text-3xl mb-4 sm:text-5xl"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram text-purple-600 text-3xl mb-4 sm:text-5xl"></i>
+                    </a>
+                </li>
+            </div>
+        </div>
+    
     </div>
     <script src="public/css/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="public/js/all.js"></script>
 </body>
 </html>
